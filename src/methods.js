@@ -54,6 +54,13 @@ export default {
     },
     version: '>=0.3.12'
   },
+  blindRawTransaction: {
+    category: 'rawtransactions',
+    features: {
+      multiwallet: '>=0.15.0'
+    },
+    version: '>=0.12.0'
+  },
   bumpFee: {
     category: 'wallet',
     features: {
