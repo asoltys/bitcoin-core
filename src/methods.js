@@ -771,6 +771,13 @@ export default {
     category: 'blockchain',
     version: '>=0.17.0'
   },
+  unblindRawTransaction: {
+    category: 'rawtransactions',
+    features: {
+      multiwallet: '>=0.15.0'
+    },
+    version: '>=0.12.0'
+  },
   unloadWallet: {
     category: 'wallet',
     version: '>=0.17.0'
