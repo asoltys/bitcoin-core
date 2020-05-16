@@ -54,6 +54,10 @@ export default {
     },
     version: '>=0.3.12'
   },
+  blindPsbt: {
+    category: 'rawtransactions',
+    version: '>=0.17.0'
+  },
   blindRawTransaction: {
     category: 'rawtransactions',
     features: {
