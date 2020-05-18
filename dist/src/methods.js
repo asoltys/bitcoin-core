@@ -60,6 +60,10 @@ var _default = {
     },
     version: '>=0.3.12'
   },
+  blindPsbt: {
+    category: 'rawtransactions',
+    version: '>=0.17.0'
+  },
   blindRawTransaction: {
     category: 'rawtransactions',
     features: {
@@ -630,6 +634,10 @@ var _default = {
   pruneBlockchain: {
     category: 'blockchain',
     version: '>=0.14.0'
+  },
+  rawIssueAsset: {
+    category: 'rawtransactions',
+    version: '>=0.17.0'
   },
   removePrunedFunds: {
     category: 'wallet',
