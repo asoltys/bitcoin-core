@@ -860,5 +860,12 @@ export default {
       multiwallet: '>=0.17.0'
     },
     version: '>=0.17.0'
+  },
+  walletSignPsbt: {
+    category: 'rawtransactions',
+    features: {
+      multiwallet: '>=0.17.0'
+    },
+    version: '>=0.17.0'
   }
 };
