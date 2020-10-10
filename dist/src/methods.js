@@ -455,6 +455,13 @@ var _default = {
     },
     version: '>=0.10.0'
   },
+  importBlindingKey: {
+    category: 'wallet',
+    features: {
+      multiwallet: '>=0.15.0'
+    },
+    version: '>=0.12.0'
+  },
   importMulti: {
     category: 'wallet',
     features: {
