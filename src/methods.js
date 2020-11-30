@@ -503,6 +503,10 @@ export default {
     },
     version: '>=0.9.0'
   },
+  issueAsset: {
+    category: 'wallet',
+    version: '>=0.17.0'
+  },
   joinPsbts: {
     category: 'rawtransactions',
     version: '>=0.18.0'
@@ -635,10 +639,6 @@ export default {
   pruneBlockchain: {
     category: 'blockchain',
     version: '>=0.14.0'
-  },
-  issueAsset: {
-    category: 'wallet',
-    version: '>=0.17.0'
   },
   rawIssueAsset: {
     category: 'rawtransactions',
