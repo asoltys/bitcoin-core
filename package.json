@@ -27,6 +27,7 @@
     "cover": "nyc --reporter=html --reporter=text npm test",
     "dependencies": "docker-compose up -d bitcoind bitcoind-ssl bitcoind-username-only",
     "lint": "eslint src test",
+    "prepare": "npm run transpile",
     "prepublish": "npm run transpile",
     "test": "NODE_ENV=test mocha $npm_package_options_mocha",
     "testdocker": "docker-compose run --rm sut",
