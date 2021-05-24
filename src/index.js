@@ -6,9 +6,8 @@
 import Parser from './parser';
 import Requester from './requester';
 import _ from 'lodash';
-import debugnyan from 'debugnyan';
 import methods from './methods';
-import requestLogger from './logging/request-logger';
+import request from '@asoltys/request';
 import semver from 'semver';
 
 /**
@@ -46,7 +45,6 @@ class Client {
     agentOptions,
     headers = false,
     host = 'localhost',
-    logger = debugnyan('bitcoin-core'),
     network = 'mainnet',
     password,
     port,
@@ -100,8 +98,6 @@ class Client {
         supported: version ? semver.satisfies(version, method.version) : true
       };
     }, {});
-
-    const request = requestLogger(logger);
 
     this.request = request.defaults({
       agentOptions: this.agentOptions,
