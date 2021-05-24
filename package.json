@@ -1,6 +1,6 @@
 {
   "name": "@asoltys/bitcoin-core",
-  "version": "3.0.1",
+  "version": "3.0.3",
   "description": "A modern Bitcoin Core REST and RPC client.",
   "keywords": [
     "bitcoin",
@@ -39,7 +39,7 @@
     "debugnyan": "^1.0.0",
     "json-bigint": "^0.2.0",
     "lodash": "^4.0.0",
-    "request": "^2.53.0",
+    "@asoltys/request": "^2.53.0",
     "semver": "^5.1.0",
     "standard-error": "^1.1.0"
   },

@@ -4,7 +4,7 @@
  */
 
 import { obfuscate } from './request-obfuscator';
-import request from 'request';
+import request from '@asoltys/request';
 import requestLogger from '@uphold/request-logger';
 
 /**
