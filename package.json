@@ -33,7 +33,7 @@
     "transpile": "rm -rf dist/* && babel src --out-dir dist/src"
   },
   "dependencies": {
-    "@asoltys/request": "^2.53.0",
+    "@asoltys/request": "^2.88.2",
     "@uphold/request-logger": "^2.0.0",
     "json-bigint": "^0.2.0",
     "lodash": "^4.0.0",
