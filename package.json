@@ -25,16 +25,13 @@
   "scripts": {
     "cover": "nyc --reporter=html --reporter=text npm test",
     "dependencies": "docker-compose up -d bitcoind bitcoind-ssl bitcoind-username-only",
-    "lint": "eslint src test",
     "prepare": "npm run transpile",
     "prepublish": "npm run transpile",
-    "test": "NODE_ENV=test mocha $npm_package_options_mocha",
     "testdocker": "docker-compose run --rm sut",
     "transpile": "rm -rf dist/* && babel src --out-dir dist/src"
   },
   "dependencies": {
     "@asoltys/request": "^2.88.2",
-    "@uphold/request-logger": "^2.0.0",
     "json-bigint": "^0.2.0",
     "lodash": "^4.0.0",
     "semver": "^5.1.0",
@@ -47,14 +44,10 @@
     "@babel/polyfill": "7.0.0-beta.32",
     "@babel/preset-env": "7.0.0-beta.32",
     "@babel/register": "7.0.0-beta.32",
-    "babel-eslint": "^8.0.0",
     "babel-plugin-istanbul": "^4.1.5",
-    "eslint": "4.11.0",
-    "eslint-config-uphold": "0.0.1",
     "mocha": "^4.0.1",
     "nock": "^9.1.0",
     "nyc": "^11.3.0",
-    "pre-commit": "^1.1.2",
     "should": "^13.1.3"
   },
   "engines": {
@@ -70,8 +63,5 @@
   },
   "options": {
     "mocha": "--require @babel/register --require @babel/polyfill --timeout 20000 --recursive --require should"
-  },
-  "pre-commit": [
-    "lint"
-  ]
+  }
 }
