@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@asoltys/request": "^2.88.2",
-    "json-bigint": "^0.2.0",
+    "json-bigint": "^1.0.0",
     "lodash": "^4.0.0",
     "semver": "^5.1.0",
     "standard-error": "^1.1.0"
